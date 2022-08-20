@@ -1,0 +1,280 @@
+/***********************************
+             HEADER
+***********************************/
+
+/***********************************
+    https://onepagelove.com/
+***********************************/
+.section-cards__header{
+    margin: 10px;
+    border: 7px double gray;
+    border-radius: 10px;
+    height: 300px;
+    animation: banners 25s infinite;  
+    @media (max-width: 768px) {
+        & {
+          height: 150px;
+          animation: none;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          border: none;
+        }       
+    }  
+}
+@keyframes banners{
+    0%, 11%{
+        background-image: url(..//img/productos/sony-playstation-5.jpg);
+        background-position: top center;
+}
+12%, 16%{
+    background-image: url(..//img/productos/auriculares-sony.jpg);   
+}
+18%, 23%{
+    background-image: url(..//img/productos/televisor-lg.jpg);
+    background-position: center;
+}25%, 30%{
+    background-image: url(..//img/productos/celular-samsung.jpg);
+    background-position: top center;
+}32%, 37%{
+    background-image: url(..//img/productos/chromecast-google.jpg);
+    background-position: center;
+}40%, 45%{
+    background-image: url(..//img/productos/dji-mavic-2-pro.jpg);
+    background-position:center;
+}47%, 53%{
+    background-image: url(..//img/productos/drone-dji.jpg);
+    background-position: center;
+}63%, 68%{
+    background-image: url(..//img/productos/lavarropas-dh.jpg);
+    background-position: bottom;
+}70%, 75%{
+    background-image: url(..//img/productos/modem-motorola.jpg);
+    background-position:  center;
+}78%, 83%{
+    background-image: url(..//img/productos/motorola-moto-e7.jpg);
+    background-position: top center;
+}94%, 100%{
+    background-image: url(..//img/productos/notebook-lenovo.jpg);
+    background-position: center;
+}
+}
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+    @media (max-width: 768px) {
+        & {
+          flex-direction: column-reverse;  
+          align-items: center;
+        }
+    }
+}
+#menu {
+    display: none;
+    &:checked + .nav-bar {
+        display: block;
+    }
+    &:checked ~ .search-bar .menu-toggle__label {
+        background-color: yellow;
+        }
+    }
+
+
+/***********************************
+             NAV BAR
+***********************************/
+
+.nav-bar {
+    background-color: gray;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    align-items: center;
+    &__nav-list {       
+        display: flex;
+        justify-content: center;
+        list-style-type:none;
+        @media (max-width: 768px) {
+            & {
+                flex-direction: column;
+                height: 220px;                
+            }
+        }
+    }
+
+    &__nav-item {
+        text-align: center;
+        background-color: pink;
+        border-radius: 10px;        
+    }
+    &__nav-link {
+        display: block;
+        background-color: purple;
+        color: #fff;
+        padding: 1em 2em;
+        text-decoration: none;
+        border-radius: 10px;   
+        &:hover{
+           background-color: #fff;
+           color: #333;
+        }
+    }
+    @media (max-width: 768px) {
+        & {
+           display: none;
+        }
+    }
+}
+
+/***********************************
+             SEARCH BAR
+***********************************/
+
+.search-bar {
+   background-color: mediumaquamarine;
+   width: 100%;
+   display: inline-flex;
+    align-items: center;
+   border-radius: 10px;
+   @media (max-width: 768px) {
+    & {
+       width: 100%;
+       display: flex;
+       flex-direction: row-reverse;
+    }
+}
+    &__form-container {
+        padding: 1em;      
+    }
+    &__logo-container {
+        cursor: pointer;      
+    }
+    &__form-container {
+        background-color: mediumaquamarine;
+        width: 100%;
+        display: inline-flex;
+        @media (max-width: 768px) {
+            & {
+                position: absolute;
+                top: 100px;
+                width: 100%;
+              
+            }
+        }
+      
+        
+    }
+    &__form-label {
+        display: none;
+        background-color: aquamarine;
+       
+        text-align: center;
+        border-radius: 15px 0 0 15px;
+    }
+    &__form-search {
+        border-radius: 15px 0 0 15px;
+        background-color: aquamarine;
+        width: 100%;
+      
+    }
+    &__form-submit {
+        background-color: purple;
+        color: white;
+       
+        border-radius: 0px 15px 15px 0 ;
+        cursor: pointer;
+        &:hover{
+            background-color: #fff;
+            color: #333;
+         }
+    }
+    &__carrito-container {
+        width: 100px;
+        height: 50px;
+      
+        background-color: mediumaquamarine;
+        border-radius: 10px;
+      
+        cursor: pointer;
+
+    }
+}
+
+/***********************************
+             MENU TOGGLE
+***********************************/
+.menu-toggle {
+    display: none;
+    background-color: red;
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+ 
+
+    &__label {
+        display: block;
+        background-color: black;
+        height: 100%;
+        border-radius: 10px;
+        
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: #333;
+        height: .2em;
+        position: absolute;
+
+        left: .5em;
+        right: .5em;
+    }
+
+    &__top-bread {
+        top: .8em;
+    }
+
+    &__meat {
+        top: 50%;
+        margin-top: -.1em;
+    }
+
+    &__bottom-bread {
+        bottom: .8em;
+    }
+
+    @media (max-width: 768px) {
+        & {
+            display: block;
+            height: 50px;
+            width: 30%;
+            margin-right: 120px;
+        }
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+         & {
+           align-self: stretch;
+         }
+
+}
+
+
+}
+h1{
+    color: chartreuse;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    position: relative;
+    top: 60px;
+    
+}
+p{
+    color: yellow;
+    
+}
+

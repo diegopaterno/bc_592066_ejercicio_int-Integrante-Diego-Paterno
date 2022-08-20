@@ -1,0 +1,220 @@
+.cards-container{
+     width: 100%;  
+     margin-top: 50px;
+     margin-bottom: 50px;
+     border-style: solid;
+     border-width: 1px;   
+     animation: banner 50s infinite ;   
+    }
+       @keyframes banner{
+                0%, 4%{
+                        background-image: url(..//img/productos/sony-playstation-5.jpg);                        
+                }
+                5%, 10%{
+                    background-image: url(..//img/productos/apple-iphone-12.jpg);                  
+                }
+                12%, 16%{
+                    background-image: url(..//img/productos/auriculares-sony.jpg);                    
+                }
+                18%, 23%{
+                    background-image: url(..//img/productos/televisor-lg.jpg);                    
+                }25%, 30%{
+                    background-image: url(..//img/productos/celular-samsung.jpg);                   
+                }32%, 37%{
+                    background-image: url(..//img/productos/chromecast-google.jpg);                   
+                }40%, 45%{
+                    background-image: url(..//img/productos/dji-mavic-2-pro.jpg);                    
+                }47%, 53%{
+                    background-image: url(..//img/productos/drone-dji.jpg);                   
+                }
+                78%, 83%{
+                    background-image: url(..//img/productos/motorola-moto-e7.jpg);                    
+                }87%, 90%{
+                    background-image: url(..//img/productos/notebook-lenovo.jpg);                    
+                }
+       }
+.card {
+    outline:none;
+    flex-grow: 1;
+    width: 220px;
+    max-width: 300px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 10 10px 5px rgb(32, 29, 29), 0 0 3px rbga(0,0,0, .4);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .2s;
+    background-color: rgba(255, 166, 0, 0.541); 
+    &:hover, 
+    &:focus {
+        -moz-transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03) skewX();
+        -moz-transform-origin: bottom;
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        box-shadow:  10px 5px 5px rgb(26, 23, 23);
+        background-color: rgba(0, 255, 255, 0.822);      
+    }
+ 
+    &__image-container {
+        height: 300px;
+        overflow: hidden;
+        -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 92%, 80% 100%, 20% 100%, 0 91%, 0 0);
+        clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 92%, 80% 100%, 20% 100%, 0 91%, 0 0);
+    }
+    &:nth-child(9n + 1){
+        background-image: url(..//img/productos/auriculares-sony.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        color: red;
+        &:hover ,
+        &:focus  {
+            transform: scale(1.01) rotate(2deg);
+            transform-origin: center;
+        }
+     
+    }
+    &:nth-child(9n + 2){
+        background-image: url(..//img/productos/camara-canon.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        color: red;
+        &:hover ,
+        &:focus  {
+            transform: scale(1.01) rotate(2deg);
+            transform-origin: center;
+        }
+    }
+    &:nth-child(9n + 3){
+        background-image: url(..//img/productos/celular-samsung.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        color: red;
+        &:hover ,
+        &:focus  {
+            transform: scale(1.01) rotate(2deg);
+            transform-origin: center;
+        }
+    }
+    &:nth-child(9n + 4){
+        background-image: url(..//img/productos/chromecast-google.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        color: red;
+        &:hover ,
+        &:focus  {
+            transform: scale(1.01) rotate(2deg);
+            transform-origin: center;
+        }
+    }
+    &:nth-child(9n + 5){
+        background-image: url(..//img/productos/dji-mavic-2-pro.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        color: red;
+        &:hover ,
+        &:focus  {
+            transform: scale(1.01) rotate(2deg);
+            transform-origin: center;
+        }
+    }
+    &:nth-child(9n + 6){
+        background-image: url(..//img/productos/drone-dji.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        color: red;
+        &:hover ,
+        &:focus  {
+            transform: scale(1.01) rotate(2deg);
+            transform-origin: center;
+        }
+    }
+    &:nth-child(9n + 7){
+        background-image: url(..//img/productos/google-nest-mini.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        color: red;
+        &:hover ,
+        &:focus  {
+            transform: scale(1.01) rotate(2deg);
+            transform-origin: center;
+        }
+    }
+    &:nth-child(9n + 8){
+        background-image: url(..//img/productos/lavarropas-dh.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        color: red;
+        &:hover ,
+        &:focus  {
+            transform: scale(1.01) rotate(2deg);
+            transform-origin: center;       
+        }
+    }
+    &:nth-child(9n + 9){
+        background-image: url(..//img/productos/modem-motorola.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        color: red;
+        &:hover ,
+        &:focus  {
+            transform: scale(1.01) rotate(2deg);
+            transform-origin: center;
+        }
+    }
+    &:hover &__image-container,
+    &:focus &__image-container {
+        transform: scale(1.4) rotate(5deg);
+        -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 92%, 80% 100%, 20% 100%, 0 91%, 0 0);
+        clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 92%, 80% 100%, 20% 100%, 0 91%, 0 0);
+    }
+    &__image {  
+        display: none;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3em;
+        font-size: 9px;
+        text-align:justify;
+        margin-bottom: 42px;   
+    }
+    @media (min-width: 1024px) {
+        & {
+            min-width: 240px;
+        }
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        & {
+            min-width: 400px;
+            max-width: 500px;
+            height: 200px;
+        }
+        &__article {
+            display: flex;   
+        }
+        & &__image-container {
+            width: 40%;   
+           clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+        &:hover &__image-container,
+        &:focus &__image-container {
+            width: 40%;   
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+        }
+    }
+
+}
