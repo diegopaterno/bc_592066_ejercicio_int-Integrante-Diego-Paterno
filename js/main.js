@@ -26,7 +26,7 @@ function start() {
             initAlta()
         }
         else if( id === 'inicio' ) {
-            initCard()
+            initInicio()
         }
         else if( id === 'nosotros' ) {
             initNosotros()

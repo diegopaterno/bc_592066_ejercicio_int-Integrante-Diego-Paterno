@@ -1,5 +1,5 @@
-function initCard(){
-    console.warn('initCard()')
+function initInicio(){
+    console.warn('initInicio()')
 
     function Card(heading, description, image) {
         // Propiedades/Atributos
