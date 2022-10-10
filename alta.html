@@ -8,56 +8,86 @@
     <title>Alta</title>
 </head>
 <body>
-    <header class="main-header">
-        <input type="checkbox" id="menu" />
-  
-        <nav class="nav-bar">
-          <ul class="nav-bar__nav-list">
-            <li class="nav-bar__nav-item">
-              <a href="index.html" class="nav-bar__nav-link"> Inicio </a>
-            </li>
-            <li class="nav-bar__nav-item">
-              <a href="alta.html" class="nav-bar__nav-link"> Alta </a>
-            </li>
-            <li class="nav-bar__nav-item">
-              <a href="contacto.html" class="nav-bar__nav-link"> Contacto </a>
-            </li>
-            <li class="nav-bar__nav-item">
-              <a href="nosotros.html" class="nav-bar__nav-link"> Nosotros </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- nav-bar -->
-  
-        <div class="search-bar">
-          <div class="search-bar__logo-container"><img
-            class="logo-container__image"
-            src="img/productos/Logo de Videojuegos  Negro Azul Neon (1).png"
-            alt="Logo"
-          /></div>
-          <form action="#" class="search-bar__form-container">
-            <label for="busqueda" class="search-bar__form-label">Buscar</label>
-            <input type="search" class="search-bar__form-search" id="busqueda" />
-            <input type="submit" class="search-bar__form-submit" value="Buscar" />
-          </form>
-          <div class="search-bar__carrito-container"> <img
-            class="carrito-container__carrito"
-            src="img/productos/carroDeCompras.png"
-            alt="carrito-de-compras"
-          /></div>
-          <div class="menu-toggle">
-            <label for="menu" class="menu-toggle__label">
-              <span class="menu-toggle__top-bread"></span>
-              <span class="menu-toggle__meat"></span>
-              <span class="menu-toggle__bottom-bread"></span>
-            </label>
-          </div>
+
+    <div class="container-alta">
+        <h1>Alta</h1>
+
+        <form autocomplete="off">
+
+            <!-- Campo de nombre -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <div></div>
+
+            <!-- Campo de precio -->
+            <label for="precio">Precio</label>
+            <input type="text" id="precio">
+            <div></div>
+
+            <!-- Campo de stock -->
+            <label for="stock">Stock</label>
+            <input type="text" id="stock">
+            <div></div>
+
+            <!-- Campo de marca -->
+            <label for="marca">Marca</label>
+            <input type="text" id="marca">
+            <div></div>
+
+            <!-- Campo de categoria -->
+            <label for="categoria">Categoría</label>
+            <input type="text" id="categoria">
+            <div></div>
+
+             <!-- Campo de detalles -->
+             <label for="detalles">Detalles</label>
+             <input type="text" id="detalles">
+             <div></div>
+
+              <!-- Campo de foto -->
+            <label for="foto">Foto</label>
+            <input type="text" id="foto">
+            <div></div>
+
+             <!-- Campo de envio -->
+             <label for="envio">Envío</label>
+             <input type="checkbox" id="envio">
+             <div></div>
+
+             <button>Agregar</button>
+        </form>
+
+        <hr>
+        <h2>Listado de productos</h2>
+        <hr>
+
+        <div id="listado-productos">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Marca</th>
+                    <th>Categoría</th>
+                    <th>Detalles</th>
+                    <th>Foto</th>
+                    <th>Envío</th>
+                </tr>
+                <tr>
+                    <th>Celular</th>
+                    <th>$2222</th>
+                    <th>2</th>
+                    <th>Iphone</th>
+                    <th>Celulares</th>
+                    <th>15Gb</th>
+                    <th>Foto</th>
+                    <th>OK</th>
+                </tr>
+            </table>
         </div>
-        <!-- search-bar -->
-      </header>
-      <!-- <header> -->
-    <div>
-      <h1>En preparacion</h1>
+
     </div>
+
+    <script src="js/alta.js"></script>
 </body>
 </html>
