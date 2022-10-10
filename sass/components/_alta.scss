@@ -1,0 +1,52 @@
+.container-alta{
+    padding: 10px;
+
+    h1{
+        color: blue;
+        
+    }
+    h2{
+        color: blueviolet;
+    }
+    div, input {
+        width: 300px;
+        display: block;
+        margin-bottom: 1px;
+        padding: 5px;
+    }
+    button {
+        display: block;
+        margin-top: 20px;
+        width: 80px;
+        color: yellow;
+        background-color: blue;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+    input [type="checkbox"] {
+        display: inline;
+        width: 15px;
+        height: 15px;
+        margin-top: 15px;
+
+    }
+    form div {
+        border: 1px solid crimson;
+        background-color: gold;
+        color: darkblue;
+        margin: 2px 0 10px 0;
+        display: none;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    table {
+        width: 90%;
+    }
+    #listado-productos{
+        width: 100%;
+    }
+
+}
