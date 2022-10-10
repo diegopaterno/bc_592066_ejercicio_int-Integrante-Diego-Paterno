@@ -20,6 +20,13 @@ function start() {
     function getNombreArchivo(id) { // id => alta
         return 'vistas/' + id + '.html' // 'vistas/alta.html'
     }
+    function marcarLink(id) {
+        const links = document.querySelectorAll('header nav a')
+        links.forEach(link => {
+            if (link.id === id) link.classList.add('active')
+            else link.classList.remove('active')
+        })
+    }
 
     function initJS(id) {
         if( id === 'alta' ) {
@@ -54,7 +61,35 @@ function start() {
         })
     }
 
- 
+    const cargarPlantillas = () => {
+        let id = location.hash.slice(1) || 'inicio'
+        marcarLink(id)
+        cargarPlantilla(id)
+
+        const links = document.querySelectorAll('header nav a')
+        console.log(links)
+
+        links.forEach(link => {
+            link.addEventListener('click', e =>{
+                e.preventDefault()
+
+                let id = link.id
+                console.log(id)
+                location.hash = id
+
+            })
+        })
+
+
+        window.addEventListener('hashchange', () => {
+            console.log('cambio la url')
+
+            let id = location.hash.slice(1) || 'inicio'
+            marcarLink(id)
+            cargarPlantilla(id)
+        })
+    }
+ cargarPlantillas()
 
 }
 
